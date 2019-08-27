@@ -71,3 +71,24 @@ To Start development server
 `$ npm run dev`
 
 The UI will be running in `http://localhost:8080`
+
+----
+
+
+## Screenshots
+
+Here's the images:
+
+#### List of users
+----
+![](https://raw.githubusercontent.com/AshwinAchu10/serverless-lambda-vue/master/screenshots/list.png)
+
+
+#### Filter users by type
+----
+![](https://raw.githubusercontent.com/AshwinAchu10/serverless-lambda-vue/master/screenshots/filter.png)
+
+
+#### Add new user
+----
+![](https://raw.githubusercontent.com/AshwinAchu10/serverless-lambda-vue/master/screenshots/add.png)
