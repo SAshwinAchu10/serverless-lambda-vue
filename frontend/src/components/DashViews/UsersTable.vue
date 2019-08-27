@@ -18,7 +18,7 @@
               style="background: #424242;"
               flat
               prominent>
-              
+
               <div class="v-toolbar-title">
                 <v-select
                   :items="items"
@@ -32,7 +32,7 @@
                   return-object
                   single-line
                   @change="select"/>
-                  
+
               </div>
               <v-spacer/>
             </v-toolbar>
@@ -45,9 +45,13 @@
                   dark
                   class="mb-2"
                   v-on="on">New User</v-btn>
-                  <v-btn @click="refresh" class="ma-2" color="black" dark>
-                      <v-icon dark>refresh</v-icon>
-                  </v-btn>
+                <v-btn
+                  class="ma-2"
+                  color="black"
+                  dark
+                  @click="refresh">
+                  <v-icon dark>refresh</v-icon>
+                </v-btn>
               </template>
               <v-card>
                 <v-form
@@ -161,6 +165,8 @@ export default {
         return pattern.test(value) || 'Invalid e-mail.'
       }
     },
+
+    /* eslint-disable */
     nameRules: [
       (v) => !!v || 'Name is required',
       (v) => v && v.length <= 10 || 'Name must be less than 10 characters'
@@ -208,9 +214,6 @@ export default {
   created () {
     this.getUsers()
   },
-
-  
-
   methods: {
     getUsers () {
       this.$http.get('/user')
@@ -232,7 +235,7 @@ export default {
         this.snackbar = true
       }
     },
-    refresh(){
+    refresh () {
       this.getUsers()
     },
 
@@ -245,9 +248,7 @@ export default {
           let method = 'patch'
           this.$store.dispatch('updateTableItem', { endpoint, tableItem, method })
             .then((response) => this.saveInline())
-            .catch(error => {
-              console.log('err')
-            })
+            .catch(error => console.log(error))
         } else {
           this.$http.post('/user', this.editedItem)
             .then(response => {
