@@ -1,8 +1,25 @@
 # Serverless-Lambda-Vue
-----
+---
 Navigate to project directory
 
 `$ cd serverless-lambda-vue`
+
+## Prerequisites 
+---
+*Nodejs & npm* - `$(sudo apt-get install nodejs) || (brew install nodejs)`
+*Serverless* - `$(npm i -g serverless)`
+
+
+Setup for local deployment
+
+#### Install aws-cli in the development machine
+
+Use below command to prepare for local deploment
+
+`$ aws configure`
+
+Input the `access key`, `secret key`, `region` name and `output` as json, Once done we are good to start backend code deployment
+
 
 #### To run Backend
 ---
@@ -17,7 +34,8 @@ Before deployment, open `.env` file and replace the mongo url with urs, then dep
 
 ` $ sls deploy`
 
-Once deployed, u will get url's like below
+#### Once deployed, u will get url's like below
+---
 
 `endpoints:`
 
@@ -33,8 +51,9 @@ Once deployed, u will get url's like below
 
 ##### Enter below command to set API url for UI deployment
 
-` export VUE_APP_API_URL=https://x1sn7zzg5h.execute-api.us-east-1.amazonaws.com/dev/api/`
+######  `$ export VUE_APP_API_URL=https://x1sn7zzg5h.execute-api.us-east-1.amazonaws.com/dev/api/`
 -----
+
 Once done, navigate to UI code
 
 `$ cd ..`
