@@ -80,6 +80,21 @@ The UI will be running in `http://localhost:8080`
 
 ----
 
+### Sequence Diagram
+---
+                    
+```seq
+User->UI: Clicks dropdown 
+Note right of UI: Makes request to server
+UI->>User: Filters users by type
+User->UI: Clicks refresh button 
+Note right of UI: Makes request to server
+UI->>User: Lists all users
+User->UI: Clicks New user 
+Note right of UI: Validates in both server and client
+UI->>User: Adds new user to list
+```
+---
 
 ## Screenshots
 
