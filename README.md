@@ -7,10 +7,12 @@ Navigate to project directory
 ## Prerequisites 
 ---
 *Nodejs & npm* - `$(sudo apt-get install nodejs) || (brew install nodejs)`
+
 *Serverless* - `$(npm i -g serverless)`
 
 
-Setup for local deployment
+### Setup for local deployment
+---
 
 #### Install aws-cli in the development machine
 
@@ -49,7 +51,7 @@ Before deployment, open `.env` file and replace the mongo url with urs, then dep
 ##### Copy the base url till `api/`
 -----
 
-##### Enter below command to set API url for UI deployment
+##### Enter below command to set API url for UI deployment, rememeber to replace the url with the copied url
 
 ######  `$ export VUE_APP_API_URL=https://x1sn7zzg5h.execute-api.us-east-1.amazonaws.com/dev/api/`
 -----
