@@ -31,7 +31,8 @@ Once deployed, u will get url's like below
 ##### Copy the base url till `api/`
 -----
 
-Enter below command to set API url for UI deployment
+##### Enter below command to set API url for UI deployment
+
 ` export VUE_APP_API_URL=https://x1sn7zzg5h.execute-api.us-east-1.amazonaws.com/dev/api/`
 -----
 Once done, navigate to UI code
