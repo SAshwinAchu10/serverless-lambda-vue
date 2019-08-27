@@ -10,8 +10,14 @@ Navigate to project directory
 
 *Serverless* - `$(npm i -g serverless)`
 
+## Components Used
+---
+`- Backend (Express framework, Serverless framework, Mongodb)`
 
-### Setup for local deployment
+`- Frontend (Vuetify, Axios)`
+
+
+### Prepare for local deployment
 ---
 
 #### Install aws-cli in the development machine
